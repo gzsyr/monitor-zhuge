@@ -64,7 +64,7 @@ def excel():
     time.sleep(2)
     action.login()
     time.sleep(3)
-    action.gggj()
+    # action.gggj()
     time.sleep(2)
     action.fenxi()
     time.sleep(3)
