@@ -36,7 +36,14 @@ class ActionTest:
         self.driver.find_element(By.CLASS_NAME, 'zg-select-arrow').click()
         time.sleep(2)
         # 点击淘房365（正式）
-        self.driver.find_element(By.XPATH, '//*[@id="layout"]/div[2]/div/div/div[1]/div[2]/div/div[2]/div[2]/div[1]/li[2]/span/div/span').click()
+        # self.driver.find_element(By.XPATH, '//*[@id="layout"]/div[2]/div/div/div[1]/div[2]/div/div[2]/div[2]/div[1]/li[2]/span/div/span').click()
+        self.driver.find_element(By.XPATH, "//*[text()='淘房365(正式)']").click()
+        # e = self.driver.find_elements(By.CLASS_NAME, "app-drop-option")
+        # for i in e:
+        #     t = i.find_element(By.TAG_NAME, 'span')
+        #     if '淘房365(正式)' in t.text:
+        #         t.click()
+        #         break
 
     def fenxi(self):
         # 点击分析
@@ -64,7 +71,7 @@ def excel():
     time.sleep(2)
     action.login()
     time.sleep(3)
-    # action.gggj()
+    action.gggj()
     time.sleep(2)
     action.fenxi()
     time.sleep(3)
